@@ -121,7 +121,14 @@ button:hover {
   }
 }
 
+/* === NAVBAR === */
+.navbar {
+  background-color: #fff;
+  padding: 1rem;
+  position: relative;
+}
 /* === NAVBAR Y MENÚ HAMBURGUESA === */
+
 .menu-toggle {
   font-size: 2rem;
   cursor: pointer;
@@ -166,9 +173,4 @@ button:hover {
   }
 }
 
-/* === NAVBAR === */
-.navbar {
-  background-color: #fff;
-  padding: 1rem;
-  position: relative;
-}
+
