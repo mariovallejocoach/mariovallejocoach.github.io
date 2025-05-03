@@ -1,4 +1,3 @@
-
 /* === RESET GENERAL === */
 body {
   margin: 0;
@@ -118,5 +117,50 @@ button:hover {
     background-size: cover;
     background-position: center top;
     padding: 2rem 1.5rem;
+  }
+}
+
+/* === NAVBAR Y MENÚ HAMBURGUESA === */
+.menu-toggle {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* === MOBILE MENU === */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 }
