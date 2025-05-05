@@ -59,12 +59,15 @@
 <footer class="footer">
 <p>Mario Vallejo © 2025 | mario.vallejo@live.com</p>
 </footer>
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.getElementById('nav-links');
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".nav-links");
+    toggle.addEventListener("click", function () {
+      menu.classList.toggle("active");
+    });
   });
 </script>
 </body>
