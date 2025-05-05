@@ -1,64 +1,70 @@
-<!-- Versión actualizada: 03/05/2025 - Menú funcional -->
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Mario Vallejo | Coach Ontológico y Ejecutivo</title>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Vallejo | Coach Ontológico y Ejecutivo</title>
+  <link rel="stylesheet" href="style-optimizado.css">
 </head>
 <body class="index">
+
 <nav class="navbar">
-  <div class="menu-toggle">☰</div>
-  <ul class="nav-links">
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Inicio</a></li>
     <li><a href="coaching-personal.html">Coaching Personal</a></li>
-    <li><a href="coaching-ejecutivo.html">Coaching Ejecutivo</a></li>
+  <li><a href="coaching-ejecutivo.html">Coaching Ejecutivo</a></li>
     <li><a href="quien-soy.html">Quién soy y qué me respalda</a></li>
   </ul>
 </nav>
-<header style="background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80'); background-size: cover; background-position: center; padding: 5rem 2rem; color: white; text-align: center;">
-<h1>Mario Vallejo</h1>
-<p>Coach Ontológico y Ejecutivo</p>
+
+<header style="background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80'); background-size: cover; background-position: center; padding: 5rem 2rem; color: white; text-align: center;">
+  <h1>Mario Vallejo</h1>
+  <p>Coach Ontológico y Ejecutivo</p>
 </header>
+
 <section class="main-section">
-<h2>¿Para qué sirve el coaching ontológico?</h2>
-<p>El coaching ontológico te ayuda a transformar tu forma de ser, comunicarte y actuar. Facilita cambios sostenibles y significativos a través del lenguaje, las emociones y el cuerpo.</p>
-<ul>
-<li>Conciencia emocional y lingüística</li>
-<li>Mejor comunicación y liderazgo</li>
-<li>Acción coherente con tus valores</li>
-</ul>
+  <h2>¿Para qué sirve el coaching ontológico?</h2>
+  <p>El coaching ontológico te ayuda a transformar tu forma de ser, comunicarte y actuar. Facilita cambios sostenibles y significativos a través del lenguaje, las emociones y el cuerpo.</p>
+  <ul>
+    <li>Conciencia emocional y lingüística</li>
+    <li>Mejor comunicación y liderazgo</li>
+    <li>Acción coherente con tus valores</li>
+  </ul>
 </section>
+
 <section class="main-section">
-<h2>¿Qué es y qué no es el coaching ontológico?</h2>
-<p>Un proceso profundo que cuestiona creencias, expande posibilidades y genera aprendizaje transformador.</p>
-<h3>¿Qué es?</h3>
-<ul>
-<li>Un espacio de escucha y autodescubrimiento</li>
-<li>Una herramienta de desarrollo personal y profesional</li>
-<li>Una práctica ética y confidencial</li>
-</ul>
-<h3>¿Qué no es?</h3>
-<ul>
-<li>No es psicoterapia</li>
-<li>No es mentoría ni consejería</li>
-<li>No es una receta mágica</li>
-</ul>
+  <h2>¿Qué es y qué no es el coaching ontológico?</h2>
+  <p>Un proceso profundo que cuestiona creencias, expande posibilidades y genera aprendizaje transformador.</p>
+  <h3>¿Qué es?</h3>
+  <ul>
+    <li>Un espacio de escucha y autodescubrimiento</li>
+    <li>Una herramienta de desarrollo personal y profesional</li>
+    <li>Una práctica ética y confidencial</li>
+  </ul>
+  <h3>¿Qué no es?</h3>
+  <ul>
+    <li>No es psicoterapia</li>
+    <li>No es mentoría ni consejería</li>
+    <li>No es una receta mágica</li>
+  </ul>
 </section>
-<section class="main-section" id="contacto">
-<h2>Escribime un mensaje</h2>
-<form action="https://formsubmit.co/mario.vallejo@live.com" method="POST">
-<input name="nombre" placeholder="Tu nombre" required="" type="text"/>
-<input name="email" placeholder="Tu correo" required="" type="email"/>
-<textarea name="mensaje" placeholder="Tu mensaje..." required=""></textarea>
-<button type="submit">Enviar</button>
-</form>
-<a class="cta whatsapp" href="https://wa.me/5491131676331" target="_blank">¡Chateamos por WhatsApp!</a>
+
+<section id="contacto" class="main-section">
+  <h2>Escribime un mensaje</h2>
+  <form action="https://formsubmit.co/mario.vallejo@live.com" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <textarea name="mensaje" placeholder="Tu mensaje..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <a href="https://wa.me/5491131676331" class="cta whatsapp" target="_blank">¡Chateamos por WhatsApp!</a>
 </section>
+
 <footer class="footer">
-<p>Mario Vallejo © 2025 | mario.vallejo@live.com</p>
+  <p>Mario Vallejo &copy; 2025 | mario.vallejo@live.com</p>
 </footer>
+
 <script>
   const menuToggle = document.getElementById('menu-toggle');
   const navLinks = document.getElementById('nav-links');
@@ -67,5 +73,6 @@
     navLinks.classList.toggle('active');
   });
 </script>
+
 </body>
 </html>
