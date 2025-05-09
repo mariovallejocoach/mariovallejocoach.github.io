@@ -1,61 +1,64 @@
 
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coaching Personal</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Coaching Personal</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-
 <nav class="navbar">
-  <div class="menu-toggle">☰</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="coaching-personal.html">Coaching Personal</a></li>
-    <li><a href="coaching-ejecutivo.html">Coaching Ejecutivo</a></li>
-    <li><a href="quien-soy.html">Quién soy y qué me respalda</a></li>
-  </ul>
+<div class="menu-toggle">☰</div>
+<ul class="nav-links">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="coaching-personal.html">Coaching Personal</a></li>
+<li><a href="coaching-ejecutivo.html">Coaching Ejecutivo</a></li>
+<li><a href="quien-soy.html">Quién soy y qué me respalda</a></li>
+</ul>
 </nav>
-
 <header>
-  <h1>Coaching Personal</h1>
-  <p>Descubrí tu potencial y transformá tu realidad</p>
+<h1>Coaching Personal</h1>
+<p>Descubrí tu potencial y transformá tu realidad</p>
 </header>
-
 <main>
-  <section>
-    
-        <h2>¿Qué es el coaching personal?</h2>
-        <p>
+<section>
+<h2>¿Qué es el coaching personal?</h2>
+<p>
           Es un proceso de acompañamiento que te permite identificar tus creencias, emociones y formas de actuar para abrir nuevas posibilidades.
         </p>
-        <ul>
-          <li>Mayor claridad en tus objetivos</li>
-          <li>Gestión emocional</li>
-          <li>Empoderamiento personal</li>
-          <li>Transformación de patrones limitantes</li>
-        </ul>
-        
-  </section>
+<ul>
+<li>Mayor claridad en tus objetivos</li>
+<li>Gestión emocional</li>
+<li>Empoderamiento personal</li>
+<li>Transformación de patrones limitantes</li>
+</ul>
+</section>
 </main>
-
 <footer class="footer">
-  <p>Mario Vallejo &copy; 2025 – <a href="mailto:mario.vallejo@live.com">mario.vallejo@live.com</a></p>
+<p>Mario Vallejo © 2025 – <a href="mailto:mario.vallejo@live.com">mario.vallejo@live.com</a></p>
 </footer>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.querySelector(".menu-toggle");
     const menu = document.querySelector(".nav-links");
+
     if (toggle && menu) {
       toggle.addEventListener("click", function () {
         menu.classList.toggle("active");
       });
+
+      const links = menu.querySelectorAll("a");
+      links.forEach(link => {
+        link.addEventListener("click", function () {
+          menu.classList.remove("active");
+        });
+      });
     }
   });
 </script>
-
 </body>
 </html>

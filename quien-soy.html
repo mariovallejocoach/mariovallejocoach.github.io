@@ -1,62 +1,65 @@
 
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quién soy y qué me respalda</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quién soy y qué me respalda</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-
 <nav class="navbar">
-  <div class="menu-toggle">☰</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="coaching-personal.html">Coaching Personal</a></li>
-    <li><a href="coaching-ejecutivo.html">Coaching Ejecutivo</a></li>
-    <li><a href="quien-soy.html">Quién soy y qué me respalda</a></li>
-  </ul>
+<div class="menu-toggle">☰</div>
+<ul class="nav-links">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="coaching-personal.html">Coaching Personal</a></li>
+<li><a href="coaching-ejecutivo.html">Coaching Ejecutivo</a></li>
+<li><a href="quien-soy.html">Quién soy y qué me respalda</a></li>
+</ul>
 </nav>
-
 <header>
-  <h1>Quién soy y qué me respalda</h1>
-  <p>Un poco más sobre mí y mi formación</p>
+<h1>Quién soy y qué me respalda</h1>
+<p>Un poco más sobre mí y mi formación</p>
 </header>
-
 <main>
-  <section>
-    
-        <h2>Acerca de mí</h2>
-        <p>
+<section>
+<h2>Acerca de mí</h2>
+<p>
           Soy Mario Vallejo, coach ontológico y ejecutivo comprometido con el desarrollo humano.
         </p>
-        <h3>Formación y experiencia</h3>
-        <ul>
-          <li>Coach Ontológico Profesional certificado</li>
-          <li>Coach Ejecutivo con experiencia en liderazgo de equipos</li>
-          <li>Facilitador en procesos de transformación personal y profesional</li>
-          <li>Más de 10 años trabajando con personas y organizaciones</li>
-        </ul>
-        
-  </section>
+<h3>Formación y experiencia</h3>
+<ul>
+<li>Coach Ontológico Profesional certificado</li>
+<li>Coach Ejecutivo con experiencia en liderazgo de equipos</li>
+<li>Facilitador en procesos de transformación personal y profesional</li>
+<li>Más de 10 años trabajando con personas y organizaciones</li>
+</ul>
+</section>
 </main>
-
 <footer class="footer">
-  <p>Mario Vallejo &copy; 2025 – <a href="mailto:mario.vallejo@live.com">mario.vallejo@live.com</a></p>
+<p>Mario Vallejo © 2025 – <a href="mailto:mario.vallejo@live.com">mario.vallejo@live.com</a></p>
 </footer>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.querySelector(".menu-toggle");
     const menu = document.querySelector(".nav-links");
+
     if (toggle && menu) {
       toggle.addEventListener("click", function () {
         menu.classList.toggle("active");
       });
+
+      const links = menu.querySelectorAll("a");
+      links.forEach(link => {
+        link.addEventListener("click", function () {
+          menu.classList.remove("active");
+        });
+      });
     }
   });
 </script>
-
 </body>
 </html>
